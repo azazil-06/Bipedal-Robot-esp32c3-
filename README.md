@@ -144,7 +144,7 @@ Here are the main visuals from the project:
 
 - Planning sketch:<br>
   <p align="center"><img src="assets/plan.jpg" alt="Plan" width="220"></p>
-- Working robot setup:<br>
+- Working on robot setup:<br>
   <p align="center"><img src="assets/working1.jpg" alt="Working setup" width="220"></p>
 - Leg/body detail:<br>
   <p align="center"><img src="assets/leftleg.jpg" alt="Leg detail" width="220"></p>
