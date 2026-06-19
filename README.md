@@ -6,11 +6,11 @@ This README is a clean summary of the build: what it does, what hardware/softwar
 
 ## Demo
 
-<p align="center">
-  <video src="assets/demo.mp4" controls width="640"></video>
-</p>
+[![Rocky demo](https://img.youtube.com/vi/CAQG6zNMC6s/maxresdefault.jpg)](https://youtu.be/CAQG6zNMC6s)
 
-If the video doesn’t render in your Markdown viewer, open it directly: [assets/demo.mp4](assets/demo.mp4)
+Click the thumbnail to watch the demo on YouTube.
+
+If the preview doesn’t render in your Markdown viewer, open the link directly: [https://youtu.be/CAQG6zNMC6s](https://youtu.be/CAQG6zNMC6s)
 
 ---
 
