@@ -55,6 +55,26 @@ The code is set up for experimentation: motion scaling, direct servo moves, and 
 
 ---
 
+## Power Supply
+
+This build uses a salvaged phone battery as the main power source and a compact charging circuit to keep Rocky portable.
+
+- Main battery: salvaged phone Li-ion cell
+- Charger: TP4056 charging module for safe USB charging and battery management
+- Voltage boost: MT3608 step-up converter to generate a stable 5V rail for the servos and ESP32
+- Power smoothing: additional 2200µF, 16V electrolytic capacitor on the 5V output to reduce voltage sag and noise during servo bursts
+
+The power path is simple and rugged enough for a portable robot:
+- Battery output goes to the TP4056 module for charging and protection
+- MT3608 boosts the battery voltage up to a stable 5V for the ESP32 and servos
+- The 2200µF capacitor on the 5V output helps absorb current spikes and keeps the supply quiet during sudden servo moves
+
+This combination of salvaged battery, TP4056 charger, MT3608 booster, and the extra capacitor has worked well to keep the robot powered and responsive without adding much bulk.
+
+<p align="center"><img src="assets/auxiliarypowsupp.jpg" alt="Auxiliary power supply setup" width="220"></p>
+
+---
+
 ## Repository Layout
 
 - [main/main.ino](main/main.ino): Arduino firmware (BLE server, OLED eyes, sensors, idle behavior, command routing)
@@ -123,13 +143,13 @@ I also explored a few extra ideas during development, like OTA (over-the-air) up
 Here are the main visuals from the project:
 
 - Planning sketch:<br>
-  <img src="assets/plan.jpg" alt="Plan" width="480">
+  <p align="center"><img src="assets/plan.jpg" alt="Plan" width="220"></p>
 - Working robot setup:<br>
-  <img src="assets/working1.jpg" alt="Working setup" width="480">
+  <p align="center"><img src="assets/working1.jpg" alt="Working setup" width="220"></p>
 - Leg/body detail:<br>
-  <img src="assets/leftleg.jpg" alt="Leg detail" width="480">
+  <p align="center"><img src="assets/leftleg.jpg" alt="Leg detail" width="220"></p>
 - Eye display:<br>
-  <img src="assets/FemaleEyes.jpg" alt="Eye display" width="480">
+  <p align="center"><img src="assets/FemaleEyes.jpg" alt="Eye display" width="220"></p>
 - Demo video: [assets/demo.mp4](assets/demo.mp4)
 
 ---
