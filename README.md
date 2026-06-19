@@ -85,7 +85,7 @@ This combination of salvaged battery, TP4056 charger, MT3608 booster, and the ex
 
 ---
 
-## BLE Control (Fact-Checked)
+## BLE Control 
 
 The robot advertises over BLE as `Rocky` (you can change this in [main.ino](main/main.ino)).
 
